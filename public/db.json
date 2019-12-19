@@ -1,0 +1,13 @@
+{
+    "series":[
+        {
+            "id": 1,
+            "name": "How I met your mother"
+        },
+
+        {
+            "id": 2,
+            "name": "Friends"
+        }
+    ]
+}
