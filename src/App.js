@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
+import { loadGenres } from './Api';
 
 
 class App extends Component {
+  constructor(props){
+    super(props)
+
+    this.state = {
+      count: 0
+    }
+  }
+  componentDidMount(){
+    loadGenres()
+      .then((res)=>console.log(res))
+  }
   render() {
     return(
           <div>
@@ -16,7 +30,7 @@ class App extends Component {
                   <div className="collapse navbar-collapse navbar-ex1-collapse">
                     <ul className="nav navbar-nav">
                       <li>
-                        <a href="">Menu item</a>
+                        <a href="">Menu item pausado as 24 min e 50 sec</a>
                       </li>
                     </ul>
                   </div>
